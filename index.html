@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-colorL #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container{
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1{
+            color: #333;
+        }
+        .email-form input[type='email']{
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 80%;
+        }
+        .email-form button{
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .email-form button:hover{
+            background-color: #218838;
+        }
+        .whatsapp-button, .social-icons a {
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .whatsapp-button{
+            background-color: #25d366;
+        }
+        .social-icons a{
+            background-color: #0077b5;
+        }
+        .social-icons a.facebook{
+            background-color: #3b5998;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Landing Page</h1>
+        <p>Subscribe to our newsletter:</p>
+        <form class="email-form" action="https://formspree.io/f/example" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">Chat on WhatsApp</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a>
+        </div>
+</body>
+</html>
